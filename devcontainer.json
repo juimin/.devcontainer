@@ -1,6 +1,6 @@
 {
     "build": {
-        "dockerfile": "base.dockerfile",
+        "dockerfile": "Dockerfile",
         "args": {
             "REMOTE_USER": "${localEnv:USER}"
         }
