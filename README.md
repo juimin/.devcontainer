@@ -12,3 +12,5 @@ and reload the container
 - Enter the top level of your project
 - Run `git submodule add git@github.com:juimin/devcontainers.git .devcontainer`
     - Optionally add `-b branch/name` if you want a specific branch on the remote
+    - If you don't do this, you can add the branch under the submodule entry in the git submodule file later
+- Refresh VS Code or whatever is attached to your devcontainer and reload.
