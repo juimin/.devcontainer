@@ -14,3 +14,8 @@ and reload the container
     - Optionally add `-b branch/name` if you want a specific branch on the remote
     - If you don't do this, you can add the branch under the submodule entry in the git submodule file later
 - Refresh VS Code or whatever is attached to your devcontainer and reload.
+
+# Staying up to date
+
+Use this command to update the submodule in whatever project
+`git submodule update --remote --merge`
