@@ -16,7 +16,7 @@ USER $REMOTE_USER
 
 # Do stuff as the user
 # Generic tools
-RUN sudo apt install -y git make vim
+RUN sudo apt install -y git make vim bash-completion
 # Docker tooling
 RUN sudo apt install -y docker.io docker-buildx
 # Language specific
