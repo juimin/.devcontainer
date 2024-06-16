@@ -1,4 +1,4 @@
-branch := $(git symbolic-ref --short HEAD)
+THIS_BRANCH := $(git symbolic-ref --short HEAD)
 
 dev-mode: clean
 	mkdir -p .devcontainer
@@ -7,10 +7,9 @@ dev-mode: clean
 
 
 sync-main:
-
 	git branch --set-upstream-to="origin/main"
 	git pull --rebase
-	git branch --set-upstream-to="$(branch)"
+	git branch --set-upstream-to="$(THIS_BRANCH)"
 
 clean:
 	rm -rf .devcontainer
