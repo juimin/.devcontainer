@@ -1,3 +1,5 @@
+branch := $(git symbolic-ref --short HEAD)
+
 dev-mode: clean
 	mkdir -p .devcontainer
 	cd .devcontainer && ln -s ../Dockerfile .
@@ -5,10 +7,10 @@ dev-mode: clean
 
 
 sync-main:
-	branch=$(git symbolic-ref --short HEAD)
+
 	git branch --set-upstream-to="origin/main"
 	git pull --rebase
-	git branch --set-upstream-to="${branch}"
+	git branch --set-upstream-to="$(branch)"
 
 clean:
 	rm -rf .devcontainer
