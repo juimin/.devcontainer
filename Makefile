@@ -7,7 +7,7 @@ dev-mode: clean
 sync-main:
 	git branch --set-upstream-to="origin/main"
 	git pull --rebase
-	git branch --set-upstream-to="$(shell eval git symbolic-ref --short HEAD)"
+	git branch --set-upstream-to="origin/$(shell eval git symbolic-ref --short HEAD)"
 
 clean:
 	rm -rf .devcontainer
