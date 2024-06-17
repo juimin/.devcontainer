@@ -23,3 +23,5 @@ RUN sudo apt install -y docker.io docker-buildx
 RUN sudo apt install -y rustup
 RUN mkdir -p /home/$REMOTE_USER/.cargo/bin
 ENV PATH="${PATH}:/home/$REMOTE_USER/.cargo/bin"
+
+RUN rustup default stable
