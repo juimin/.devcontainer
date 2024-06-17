@@ -19,3 +19,7 @@ USER $REMOTE_USER
 RUN sudo apt install -y git make vim bash-completion
 # Docker tooling
 RUN sudo apt install -y docker.io docker-buildx
+# Program stuff
+RUN sudo apt install -y rustup
+RUN mkdir -p /home/$REMOTE_USER/.cargo/bin
+ENV PATH="${PATH}:/home/$REMOTE_USER/.cargo/bin"

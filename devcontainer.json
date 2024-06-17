@@ -13,7 +13,7 @@
                 "Meezilla.json",
                 "ms-azuretools.vscode-docker",
                 "ms-vscode.makefile-tools",
-                "ms-python.python"
+                "rust-lang.rust-analyzer"
             ],
             "settings": {
                 "editor.formatOnSave": true
