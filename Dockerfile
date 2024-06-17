@@ -19,5 +19,3 @@ USER $REMOTE_USER
 RUN sudo apt install -y git make vim bash-completion
 # Docker tooling
 RUN sudo apt install -y docker.io docker-buildx
-# Language specific
-RUN sudo apt install -y python3
