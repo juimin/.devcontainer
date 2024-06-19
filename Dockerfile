@@ -18,4 +18,4 @@ USER $REMOTE_USER
 # Generic tools
 RUN sudo apt install -y git make vim bash-completion
 # Docker tooling
-RUN sudo apt install -y docker.io docker-buildx
+RUN sudo apt install -y docker.io docker-buildx docker-compose
